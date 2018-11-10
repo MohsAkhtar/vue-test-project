@@ -4,7 +4,7 @@ new Vue({
     state: true,
     inputName: '',
     names: [],
-    showError = false
+    showError: false
   },
   methods: {
     addNameToList() {
