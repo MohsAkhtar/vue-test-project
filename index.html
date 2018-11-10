@@ -22,7 +22,13 @@
         </div>
         <div class="error_label" v-if="showError">Please enter a name!!!</div>
         <div class="list_of_names">
-          <div v-for="(name, index) in names" :key="index">{{ name }}</div>
+          <div
+            v-for="(name, index) in names"
+            :key="index"
+            @click="removeName(index)"
+          >
+            {{ name }}
+          </div>
         </div>
         <div v-if="names.length > 1">
           <div class="action_button" @click="showResults">

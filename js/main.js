@@ -17,6 +17,9 @@ new Vue({
         this.showError = true;
       }
     },
+    removeName(index) {
+      this.names.splice(index, 1);
+    },
     validate(value) {
       if (value !== '') {
         return true;
